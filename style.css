@@ -11,15 +11,19 @@ html {
 
 body {
     background-color: black;
-    color: white;
+    color: rgb(225, 216, 216);
+    background-image: url(images/stars.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/stars.jpg);
-    background-size: cover;
-    background-position: center;
+    background-image: url(images/chriss.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .container {
@@ -34,7 +38,8 @@ nav {
 }
 
 .logo {
-    width: 140px;
+    width: 150px;
+    height: auto;
 }
 
 nav ul li {
@@ -44,7 +49,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(225, 216, 216);
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -77,12 +82,14 @@ nav ul li a:hover::after {
 
 .header-text h1 span {
     color: brown;
+    text-shadow: 0 0 3px whitesmoke, 0 0 5px rgb(140, 140, 202);
 }
 
 /* About */
-#id {
-    padding: 80px 0px;
-    color: aquamarine;
+.transparent {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding-top: 75px;
 }
 
 .row {
@@ -107,7 +114,7 @@ nav ul li a:hover::after {
 .subtitle {
     font-size: 60px;
     font-weight: 600;
-    color: white;
+    color: rgb(212, 212, 212);
 }
 
 .tab-titles {
@@ -144,8 +151,9 @@ nav ul li a:hover::after {
 }
 
 .tab-contents ul li span {
-    color: brown;
+    color: rgb(190, 40, 40);
     font-size: 14px;
+    font-weight: bold;
 }
 
 .tab-contents {
@@ -157,9 +165,6 @@ nav ul li a:hover::after {
 }
 
 /* Portfolio */
-#portfolio {
-    padding: 50px 0;
-}
 
 .work-list {
     display: grid;
@@ -176,6 +181,7 @@ nav ul li a:hover::after {
 
 .work img {
     width: 100%;
+    height: 30vh;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -252,7 +258,7 @@ nav ul li a:hover::after {
 }
 
 .social-icons a:hover {
-    color: darkblue;
+    color: brown;
     transform: translateY(-5px);
 }
 
